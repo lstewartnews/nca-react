@@ -1,14 +1,7 @@
-import { useEffect, useState } from "react";
-import Profile from "./Components/Profile";
-import ProfileList from "./Components/ProfileList";
 import type { ProfileData } from "./types";
 import "./App.css";
 
-interface UsersResponse {
-	users: ProfileData[];
-}
-
-const GET_PROFILES_URL = "https://dummyjson.com/users?limit=3&select=id,firstName,lastName,email,age";
+// const GET_PROFILES_URL = "https://dummyjson.com/users?limit=3&select=id,firstName,lastName,email,age";
 
 /*
 Example response 
@@ -74,11 +67,9 @@ function App() {
 		<>
 			<section id="center">
 				<h1>Profiles</h1>
-				<ProfileList profiles={PROFILES} />
+			
+			
 			</section>
-
-			<div className="ticks"></div>
-
 			<section id="spacer"></section>
 		</>
 	);
